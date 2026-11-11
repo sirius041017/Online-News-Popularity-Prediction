@@ -1,0 +1,99 @@
+$model
+
+Call:
+glm(formula = f, family = binomial(), data = train, control = glm.control(maxit = 100))
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  -0.022921   0.066545  -0.344 0.730509    
+n_tokens_title                0.003945   0.014350   0.275 0.783381    
+n_tokens_content              0.143538   0.026530   5.410 6.29e-08 ***
+n_unique_tokens              -0.005003   0.053577  -0.093 0.925607    
+n_non_stop_unique_tokens     -0.062255   0.047571  -1.309 0.190647    
+num_hrefs                     0.035616   0.019305   1.845 0.065059 .  
+num_self_hrefs               -0.092450   0.017020  -5.432 5.58e-08 ***
+num_imgs                     -0.049458   0.017990  -2.749 0.005974 ** 
+num_videos                    0.014152   0.015959   0.887 0.375186    
+average_token_length          0.015418   0.030740   0.502 0.615965    
+num_keywords                  0.009998   0.017092   0.585 0.558566    
+kw_min_min                    0.141952   0.026015   5.457 4.85e-08 ***
+kw_max_min                    0.151793   0.055277   2.746 0.006032 ** 
+kw_avg_min                   -0.174023   0.058419  -2.979 0.002893 ** 
+kw_min_max                   -0.020692   0.016016  -1.292 0.196366    
+kw_max_max                   -0.048740   0.029789  -1.636 0.101802    
+kw_avg_max                   -0.161477   0.029406  -5.491 3.99e-08 ***
+kw_min_avg                   -0.092500   0.020758  -4.456 8.35e-06 ***
+kw_max_avg                   -0.578203   0.041639 -13.886  < 2e-16 ***
+kw_avg_avg                    0.956401   0.049108  19.475  < 2e-16 ***
+self_reference_min_shares     0.155651   0.041318   3.767 0.000165 ***
+self_reference_max_shares     0.051800   0.043693   1.186 0.235810    
+self_reference_avg_sharess   -0.008928   0.059902  -0.149 0.881518    
+LDA_00                        0.141981   0.028673   4.952 7.36e-07 ***
+LDA_01                       -0.089630   0.025796  -3.475 0.000512 ***
+LDA_02                       -0.149204   0.029540  -5.051 4.40e-07 ***
+LDA_03                       -0.106645   0.033627  -3.171 0.001517 ** 
+global_subjectivity           0.090486   0.019673   4.600 4.24e-06 ***
+global_sentiment_polarity     0.051629   0.037202   1.388 0.165201    
+global_rate_positive_words   -0.058113   0.027396  -2.121 0.033904 *  
+global_rate_negative_words    0.032131   0.035497   0.905 0.365369    
+rate_positive_words          -0.022647   0.236130  -0.096 0.923594    
+rate_negative_words          -0.031956   0.218201  -0.146 0.883566    
+avg_positive_polarity        -0.069638   0.029860  -2.332 0.019690 *  
+min_positive_polarity        -0.030215   0.019202  -1.574 0.115591    
+max_positive_polarity         0.004514   0.022803   0.198 0.843090    
+avg_negative_polarity        -0.042819   0.038437  -1.114 0.265283    
+min_negative_polarity         0.043177   0.031724   1.361 0.173510    
+max_negative_polarity         0.008480   0.024365   0.348 0.727795    
+title_subjectivity            0.047396   0.021370   2.218 0.026562 *  
+title_sentiment_polarity      0.060332   0.016425   3.673 0.000240 ***
+abs_title_subjectivity        0.092112   0.016616   5.543 2.97e-08 ***
+abs_title_sentiment_polarity  0.013721   0.022051   0.622 0.533782    
+empty_content                 0.017152   0.146083   0.117 0.906536    
+channelBusiness              -0.287136   0.089830  -3.196 0.001391 ** 
+channelEntertainment         -0.277009   0.059167  -4.682 2.84e-06 ***
+channelLifestyle             -0.105324   0.095405  -1.104 0.269605    
+channelSocial Media           0.730479   0.089321   8.178 2.88e-16 ***
+channelTechnology             0.369467   0.087881   4.204 2.62e-05 ***
+channelWorld                 -0.025350   0.092772  -0.273 0.784660    
+weekdayFriday                 0.086376   0.049276   1.753 0.079617 .  
+weekdaySaturday               0.881600   0.069352  12.712  < 2e-16 ***
+weekdaySunday                 0.587795   0.063092   9.316  < 2e-16 ***
+weekdayThursday              -0.054753   0.046339  -1.182 0.237373    
+weekdayTuesday               -0.114066   0.046291  -2.464 0.013735 *  
+weekdayWednesday             -0.124942   0.046145  -2.708 0.006777 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 32977  on 23792  degrees of freedom
+Residual deviance: 30257  on 23737  degrees of freedom
+AIC: 30369
+
+Number of Fisher Scoring iterations: 5
+
+
+$original_fields
+[1] 67
+
+$included_fields
+[1] 45
+
+$design_predictors
+[1] 55
+
+$label_changes
+[1] 0
+
+$max_column_VIF
+[1] 320.4818
+
+$columns_VIF_above_10
+[1] 9
+
+$influence_flags
+[1] 504
+
+$extreme_fitted
+[1] 0
+

@@ -1,0 +1,7 @@
+check,value
+Raw rows,39644
+Removed ratio outlier rows,1
+Cleaned rows,39643
+Missing cells,0
+Duplicate rows,0
+Zero-token articles,1181

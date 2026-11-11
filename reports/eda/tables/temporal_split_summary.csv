@@ -1,0 +1,4 @@
+temporal_split,n,timedelta_min,timedelta_max,median_shares,popular_rate
+Training,23793,265.0,731.0,1500.0,0.5089311982515866
+Validation,7966,132.0,264.0,1500.0,0.5046447401456189
+Test,7884,8.0,131.0,1300.0,0.4353120243531202
